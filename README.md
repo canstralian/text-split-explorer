@@ -17,6 +17,16 @@ You can adjust different parameters and choose different types of splitters.
 By pasting a text file, you can apply the splitter to that text and see the resulting splits.
 You are also shown a code snippet that you can copy and use in your application
 
+## Table of Contents
+
+- [Hosted App](#hosted-app)
+- [Running locally](#running-locally)
+- [Examples and Use Cases](#examples-and-use-cases)
+  - [Example 1: Splitting a Markdown File](#example-1-splitting-a-markdown-file)
+  - [Example 2: Splitting a Python Code File](#example-2-splitting-a-python-code-file)
+- [Frequently Asked Questions (FAQs)](#frequently-asked-questions-faqs)
+- [Contribution Guide](#contribution-guide)
+
 ## Hosted App
 
 To use the hosted app, head to [https://langchain-text-splitter.streamlit.app/](https://langchain-text-splitter.streamlit.app/)
