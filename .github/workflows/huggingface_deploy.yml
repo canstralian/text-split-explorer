@@ -13,7 +13,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
       with:
-        ref: ${{ github.sha }}  # Pin to specific commit
+        ref: ${{ github.sha }}
 
     - name: Set up Python
       uses: actions/setup-python@v2
@@ -41,4 +41,4 @@ jobs:
         huggingface-cli repo create my-streamlit-app --type=space --private
         huggingface-cli repo upload --repo-id Canstralian/text-split-explorer app.py requirements.txt
         huggingface-cli space hardware --repo-id Canstralian/text-split-explorer-app --hardware cpu-basic
-      continue-on-error: true  # Allow workflow to continue even if deployment fails
+      continue-on-error: true
