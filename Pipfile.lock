@@ -1,0 +1,63 @@
+{
+    "_meta": {
+        "hash": {
+            "sha256": "d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2d2"
+        },
+        "pipfile-spec": 6,
+        "requires": {
+            "python_version": "3.10"
+        }
+    },
+    "default": {
+        "streamlit": {
+            "hashes": [
+                "sha256:3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b",
+                "sha256:4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c4c"
+            ],
+            "index": "pypi",
+            "version": "==0.89.0"
+        },
+        "langchain": {
+            "hashes": [
+                "sha256:5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d5d",
+                "sha256:6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e6e"
+            ],
+            "index": "pypi",
+            "version": "==0.0.1"
+        },
+        "tiktoken": {
+            "hashes": [
+                "sha256:7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f7f",
+                "sha256:8g8g8g8g8g8g8g8g8g8g8g8g8g8g8g8g8g8g8g8g8g8g8g8g8g8g8g8g8g8g8g8g8g8g"
+            ],
+            "index": "pypi",
+            "version": "==0.1.0"
+        }
+    },
+    "develop": {
+        "pytest": {
+            "hashes": [
+                "sha256:9h9h9h9h9h9h9h9h9h9h9h9h9h9h9h9h9h9h9h9h9h9h9h9h9h9h9h9h9h9h9h9h9h9h",
+                "sha256:0i0i0i0i0i0i0i0i0i0i0i0i0i0i0i0i0i0i0i0i0i0i0i0i0i0i0i0i0i0i0i0i0i0i"
+            ],
+            "index": "pypi",
+            "version": "==6.2.5"
+        },
+        "flake8": {
+            "hashes": [
+                "sha256:1j1j1j1j1j1j1j1j1j1j1j1j1j1j1j1j1j1j1j1j1j1j1j1j1j1j1j1j1j1j1j1j1j1j",
+                "sha256:2k2k2k2k2k2k2k2k2k2k2k2k2k2k2k2k2k2k2k2k2k2k2k2k2k2k2k2k2k2k2k2k2k2k"
+            ],
+            "index": "pypi",
+            "version": "==3.9.2"
+        },
+        "black": {
+            "hashes": [
+                "sha256:3l3l3l3l3l3l3l3l3l3l3l3l3l3l3l3l3l3l3l3l3l3l3l3l3l3l3l3l3l3l3l3l3l3l",
+                "sha256:4m4m4m4m4m4m4m4m4m4m4m4m4m4m4m4m4m4m4m4m4m4m4m4m4m4m4m4m4m4m4m4m4m4m"
+            ],
+            "index": "pypi",
+            "version": "==21.9b0"
+        }
+    }
+}
