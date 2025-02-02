@@ -1,9 +1,7 @@
-name: Huggingface Deployment
-
-on:
-  push:
-    branches:
-      - main
+name: Deploy to Huggingface
+permissions:
+  contents: read
+  pull-requests: write
 
 jobs:
   deploy:
