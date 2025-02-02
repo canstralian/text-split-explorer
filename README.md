@@ -35,18 +35,133 @@ Then, run the Streamlit app with:
 streamlit run splitter.py
 ```
 
-## GitHub Workflows
+## Examples and Use Cases
 
-This repository includes several GitHub workflows to ensure code quality and proper functionality. The workflows are located in the `.github/workflows` directory.
+### Example 1: Splitting a Markdown File
 
-### Linting
+Suppose you have a Markdown file with the following content:
 
-The `lint.yml` workflow ensures that the codebase adheres to coding standards and best practices by running a linter on the code. It is triggered on `push` and `pull_request` events.
+```markdown
+# Introduction
 
-### Code Coverage
+This is the introduction section.
 
-The `code-coverage.yml` workflow measures and reports the code coverage of the repository. It is triggered on `push` and `pull_request` events.
+## Section 1
 
-### Dependency Check
+This is the first section.
 
-The `dependency-check.yml` workflow checks for dependency issues by installing the required packages and running coverage tests. It is triggered on `push` and `pull_request` events.
+## Section 2
+
+This is the second section.
+```
+
+You can use the `CharacterTextSplitter` to split the Markdown file into chunks based on the section delimiters (`##`). The resulting chunks will be:
+
+1. `# Introduction\n\nThis is the introduction section.`
+2. `## Section 1\n\nThis is the first section.`
+3. `## Section 2\n\nThis is the second section.`
+
+### Example 2: Splitting a Python Code File
+
+Suppose you have a Python code file with the following content:
+
+```python
+class MyClass:
+    def method1(self):
+        pass
+
+    def method2(self):
+        pass
+```
+
+You can use the `RecursiveCharacterTextSplitter` to split the Python code file into chunks based on the class and method definitions. The resulting chunks will be:
+
+1. `class MyClass:\n    def method1(self):\n        pass`
+2. `def method2(self):\n        pass`
+
+## Frequently Asked Questions (FAQs)
+
+### How do I install the required dependencies?
+
+To install the required dependencies, run the following command:
+
+```shell
+pip install -r requirements.txt
+```
+
+### How do I run the Streamlit app locally?
+
+To run the Streamlit app locally, use the following command:
+
+```shell
+streamlit run splitter.py
+```
+
+### How do I contribute to the project?
+
+Please refer to the [Contribution Guide](#contribution-guide) for detailed instructions on how to contribute to the project.
+
+## Contribution Guide
+
+We welcome contributions to the Text Split Explorer project! To contribute, please follow these steps:
+
+1. Fork the repository and clone it to your local machine.
+2. Set up the development environment by running the following command:
+
+   ```shell
+   pip install -r requirements.txt
+   ```
+
+3. Create a new branch for your feature or bug fix:
+
+   ```shell
+   git checkout -b my-feature-branch
+   ```
+
+4. Make your changes and commit them with a descriptive commit message:
+
+   ```shell
+   git commit -m "Add feature: description of the feature"
+   ```
+
+5. Push your changes to your forked repository:
+
+   ```shell
+   git push origin my-feature-branch
+   ```
+
+6. Create a pull request from your branch to the main repository's `main` branch.
+
+### Running Tests
+
+To run the tests, use the following command:
+
+```shell
+pytest
+```
+
+### Code Style
+
+We use `flake8` for linting and `black` for code formatting. Please ensure that your code adheres to the following guidelines:
+
+- Run `flake8` to check for linting issues:
+
+  ```shell
+  flake8 .
+  ```
+
+- Run `black` to format your code:
+
+  ```shell
+  black .
+  ```
+
+### Documentation
+
+Please ensure that your code is well-documented with comments and docstrings. This helps other contributors understand the purpose and functionality of different parts of the code.
+
+### Submitting Pull Requests
+
+When submitting a pull request, please provide a clear and concise description of the changes you have made. Include any relevant issue numbers and provide context for the changes.
+
+Thank you for contributing to the Text Split Explorer project!
