@@ -15,6 +15,9 @@ jobs:
       with:
         ref: ${{ github.sha }}
 
+    - name: Set up Git safe directory
+      run: git config --global --add safe.directory /home/runner/work/text-split-explorer/text-split-explorer
+
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
