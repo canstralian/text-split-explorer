@@ -1,9 +1,9 @@
-name: Code Coverage
+name: Dependency Check
 
 on: [push, pull_request]
 
 jobs:
-  coverage:
+  dependency-check:
     runs-on: ubuntu-latest
 
     steps:
@@ -19,17 +19,17 @@ jobs:
       run: |
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-        pip install coverage
-        pip install codecov
+        pip install safety
+        pip install pip-audit
       continue-on-error: true
 
     - name: List installed packages
       run: pip list
 
-    - name: Run coverage
-      run: |
-        coverage run -m pytest
-        coverage report
-        coverage xml
-        codecov
+    - name: Run safety check
+      run: safety check
+      continue-on-error: true
+
+    - name: Run pip-audit
+      run: pip-audit
       continue-on-error: true

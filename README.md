@@ -34,3 +34,19 @@ Then, run the Streamlit app with:
 ```shell
 streamlit run splitter.py
 ```
+
+## GitHub Workflows
+
+This repository includes several GitHub workflows to ensure code quality and proper functionality. The workflows are located in the `.github/workflows` directory.
+
+### Linting
+
+The `lint.yml` workflow ensures that the codebase adheres to coding standards and best practices by running a linter on the code. It is triggered on `push` and `pull_request` events.
+
+### Code Coverage
+
+The `code-coverage.yml` workflow measures and reports the code coverage of the repository. It is triggered on `push` and `pull_request` events.
+
+### Dependency Check
+
+The `dependency-check.yml` workflow checks for dependency issues by installing the required packages and running coverage tests. It is triggered on `push` and `pull_request` events.
